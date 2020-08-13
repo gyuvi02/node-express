@@ -4,7 +4,8 @@
   "description": "Just for fun",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+      "debug": "ndb server.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.28",
     "morgan": "^1.10.0",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "slugify": "^1.4.5",
+    "validator": "^13.1.1"
   }
 }
