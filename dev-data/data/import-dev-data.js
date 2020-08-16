@@ -16,16 +16,16 @@ mongoose.connect(DB, {
 })
   .then(() => console.log('DB connection successful'));
 
-const tours = JSON.parse(fs.readFileSync(`${__dirname}/tours-simple.json`, 'utf-8'));
+const tours = JSON.parse(fs.readFileSync(`${__dirname}/tours.json`, 'utf-8'));
 
 const importData = async () => {
   try {
     await Tour.create(tours);
     console.log('Data successfully loaded');
-    process.exit();
   } catch (err){
     console.log(err);
   }
+  process.exit();
 }
 
 const deleteData = async () => {
