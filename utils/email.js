@@ -49,6 +49,3 @@ module.exports = class Email {
     await this.send('welcome', 'Welcome to the Natours Family');
   }
 }
-  
-
- module.exports = sendEmail;

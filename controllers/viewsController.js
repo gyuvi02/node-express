@@ -17,7 +17,7 @@ exports.getOverview = catchAsync(async (req, res) => {
 });
 
 exports.getTour = catchAsync(async (req, res, next) => {
-  console.log(req.params.id);
+  // console.log(req.params.id);
   //Get tour data from collection (including reviews and guides)
   const myTour = await Tour.findOne({ slug: req.params.slug }).populate({
     path: 'reviews',
